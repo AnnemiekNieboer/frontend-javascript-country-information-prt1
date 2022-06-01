@@ -1,0 +1,33 @@
+/*Africa: blauw*/
+/*Americas: groen*/
+/*Asia: rood*/
+/*Europe: geel*/
+/*Oceania: paars*/
+
+.africa {
+    color: blue;
+}
+
+.america {
+    color: green;
+}
+
+.asia {
+    color: red;
+}
+
+.europe {
+    color: yellow;
+}
+
+.oceania {
+    color: purple;
+}
+
+.otherCountries {
+    color: orange;
+}
+
+.country-class {
+
+}
