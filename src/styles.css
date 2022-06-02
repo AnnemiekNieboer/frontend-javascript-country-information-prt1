@@ -1,29 +1,78 @@
-/*Africa: blauw*/
-/*Americas: groen*/
-/*Asia: rood*/
-/*Europe: geel*/
-/*Oceania: paars*/
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* --------------- 1.2 Colors ------------------- */
+
+:root {
+    --main-country-color-africa: #5576C1;
+    --main-country-color-america: #4E824B;
+    --main-country-color-asia: #D04E5B;
+    --main-country-color-europe: #FFD336;
+    --main-country-color-oceania: #A653BB;
+    --main-country-color-othercountries: #FC8E59;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1 {
+    margin: 10px;
+}
+
+body {
+    font-family: "Roboto Light", sans-serif;
+}
+
+/* ------------------------------- 3. Areas --------------------------------------- */
+
+/* --------------- 3.1 Body ------------------- */
+
+.body__outer-container {
+    width: 100%;
+}
+
+/* --------------- 3.2 Header ------------------- */
+
+.header__outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__worldmap {
+    width: 80%;
+}
+
+/* --------------- 3.2 Main__country-list ------------------- */
 
 .africa {
-    color: blue;
+    color: var(--main-country-color-africa);
 }
 
 .america {
-    color: green;
+    color: var(--main-country-color-america);
 }
 
 .asia {
-    color: red;
+    color: var(--main-country-color-asia);
 }
 
 .europe {
-    color: yellow;
+    color: var(--main-country-color-europe);
 }
 
 .oceania {
-    color: purple;
+    color: var(--main-country-color-oceania);
 }
 
 .otherCountries {
-    color: orange;
+    color: var(--main-country-color-othercountries);
+}
+
+.country-container__flag {
+    display: inline-block;
+    width: 30px;
 }

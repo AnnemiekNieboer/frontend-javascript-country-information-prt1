@@ -66,12 +66,12 @@ function countryList(countries) {
 
     responseAddedInHTML.innerHTML = countries.map((country) => {
         return `
-            <li>
-                <h4 class="${changeColorOfCountryName(country.region)}">${country.name}</h4>
-                <p>
+            <li class="list-of-countries__country-container">
+                <img src="${country.flags.png}" class="country-container__flag" alt="flag of ${country.name}">
+                <h4 class="${changeColorOfCountryName(country.region)} country-container__header">${country.name}</h4>
+                <p class="country-container__population-text">
                 Has a population of ${country.population} people
                 </p>
-                <img src="${country.flags.png}" alt="flag of ${country.name}">
             </li>
             `;
     } ).join("");
