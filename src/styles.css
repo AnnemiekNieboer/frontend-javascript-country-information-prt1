@@ -1,0 +1,133 @@
+/* ------------------------------- 1. Global Styles -------------------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* --------------- 1.2 Colors ------------------- */
+
+:root {
+    --main-background-color: #FAFAFA;
+    --main-shadow-color: #c7c7c7;
+    --main-country-color-africa: #5576C1;
+    --main-country-color-america: #4E824B;
+    --main-country-color-asia: #D04E5B;
+    --main-country-color-europe: #FFD336;
+    --main-country-color-oceania: #A653BB;
+    --main-country-color-othercountries: #FC8E59;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1 {
+    margin: 10px;
+}
+
+body {
+    font-family: "Roboto Light", sans-serif;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.country-container__header {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+.country-container__population-text {
+    font-size: 10px;
+    display: block;
+}
+
+/* ------------------------------- 3. Areas --------------------------------------- */
+
+/* --------------- 3.1 Body ------------------- */
+
+.body__outer-container {
+    width: 100%;
+}
+
+/* --------------- 3.2 Header ------------------- */
+
+.header__outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__worldmap {
+    width: 80%;
+}
+
+/* --------------- 3.3 Main ------------------- */
+
+.main__outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --------------- 3.4 Main__country-list ------------------- */
+
+
+.africa {
+    color: var(--main-country-color-africa);
+}
+
+.america {
+    color: var(--main-country-color-america);
+}
+
+.asia {
+    color: var(--main-country-color-asia);
+}
+
+.europe {
+    color: var(--main-country-color-europe);
+}
+
+.oceania {
+    color: var(--main-country-color-oceania);
+}
+
+.otherCountries {
+    color: var(--main-country-color-othercountries);
+}
+
+.main-list-of-countries__outer-container {
+    background-color: var(--main-background-color);
+    border: 1px solid var(--main-shadow-color);
+    width: 95%;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#list-of-countries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-of-countries__country-container {
+    list-style: none;
+    margin: 5px;
+    width: 30%;
+}
+
+.country-container__flag {
+    display: inline-block;
+    width: 20px;
+}
+
+
+
+
